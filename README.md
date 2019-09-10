@@ -180,8 +180,8 @@ I performed data analysis on the data that I scraped , but due to some error was
 ![Imgur](https://i.imgur.com/Q6m4mSp.png)
 
 ## References
-[Data visualization](https://towardsdatascience.com/data-visualization-using-matplotlib-16f1aae5ce70)
-[LSTM and sentimental analysis](https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948)
-[Scrapping Reddit](https://towardsdatascience.com/scraping-reddit-data-1c0af3040768)
-[Multi-Class Text Classification Model Comparison and Selection](https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568)
-[MongoDB](https://docs.mongodb.com/manual/reference/program/mongodump/)
+* [Data visualization](https://towardsdatascience.com/data-visualization-using-matplotlib-16f1aae5ce70)
+* [LSTM and sentimental analysis](https://towardsdatascience.com/sentiment-analysis-using-lstm-step-by-step-50d074f09948)
+* [Scrapping Reddit](https://towardsdatascience.com/scraping-reddit-data-1c0af3040768)
+* [Multi-Class Text Classification Model Comparison and Selection](https://towardsdatascience.com/multi-class-text-classification-model-comparison-and-selection-5eb066197568)
+* [MongoDB](https://docs.mongodb.com/manual/reference/program/mongodump/)
