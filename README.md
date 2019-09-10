@@ -3,13 +3,14 @@ A Reddit Flair Detector web application to detect flairs of India subreddit post
 The application can be found live at [Reddit Flair Detector](https://shekapp.herokuapp.com).
 ## Table of Contents
 
-1. Directory Structure 
-2. Installation
-0. [Data Aquisition](#data-aquisition)
-0. [Flair Classification](#flair-classification)
-0. [Deploying as a Web Service](#deploying-as-a-web-service)
-0. [Build on Google Colab](#build-on-google-colab)
-0. [References](#references)
+1. [Directory Structure](#directory-structure) 
+2. [Installation](#installation)
+3. [Project Execution](#project-execution)
+4. [Data Aquisition](#data-aquisition)
+5. [Flair Classification](#flair-classification)
+6. [WebApp](#webapp)
+7. [Data Analysis](#data-analysis)
+8. [References](#references)
 ## Directory Structure
 
 The directory is a ***Flask*** web application set-up for hosting on *Heroku* servers. The description of files and folders can be found below:
@@ -106,7 +107,7 @@ forming a list of list as the whole dataset convert this list into a DataFrame
  * Collected 100 India subreddit data for each of the 11 flairs using `praw` module 
  * The data includes *title, comments, body, url, author, score, id, time-created* and *number of comments*.
  * For **comments**, only top level comments are considered in dataset and no sub-comments are present.
-## How Does this work ?
+## Flair Classification
 I basically had three approaches for the problem -
 
 1. Word2vec+DNN/LSTM followed by a DNN
@@ -162,11 +163,20 @@ In order to further increase my accuracy I decided to also process the top comme
 
 As you can see the results were much better now and **randomforest** gave me the best accuracy 
 So i pickled the randomforest model and used it further on my webapp
-
 ## WebApp
+The best model - random forest is deployed as a web app. Check the live demo [here](https://shekapp.herokuapp.com). All the required files can be found [here](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/webapp)
+### DEMO
+![Home Page](https://i.imgur.com/frVXUYL.png)
+![Result Page](https://i.imgur.com/JyZdH3P.png)
+## Data Analysis
+I performed data analysis on the data that I scraped , but due to some error wasnt able to deploy that as a page on my web app 
 
-### Webapp demo
+** But I have included the code and the result of the same in the [Data analysis folder](https://github.com/abhishekchopra0907/Reddit-Flair-Detector/tree/master/data%20analysis) **
 
-| 1                                                                                      |                                                                                   2    |
-|:--------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------------:|
-|![](https://drive.google.com/file/d/1zN8i2tbf4nH4enOwylVYpqvjoiWs8_dZ/view?usp=sharing) |![](https://drive.google.com/file/d/1aKxyHrscjymXF8VFlh80ePH5R96Oxx4v/view?usp=sharing) |
+![Imgur](https://i.imgur.com/1U2jEK6.png)
+
+![Imgur](https://i.imgur.com/SBFZ1Hw.png)
+
+![Imgur](https://i.imgur.com/Q6m4mSp.png)
+
+## References
